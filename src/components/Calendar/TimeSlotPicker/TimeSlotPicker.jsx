@@ -8,6 +8,7 @@ export default function TimeSlotPicker({
 }) {
   const CustomChip = (props) => (
     <Chip
+      id="slotBtn"
       label={props.label}
       color="primary"
       variant="outlined"

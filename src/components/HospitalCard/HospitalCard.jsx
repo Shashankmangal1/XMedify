@@ -111,6 +111,7 @@ export default function HospitalCard({
                 Available Today
               </Typography>
               <Button
+                id="bookBtn"
                 variant="contained"
                 disableElevation
                 onClick={() => setShowCalendar((prev) => !prev)}
