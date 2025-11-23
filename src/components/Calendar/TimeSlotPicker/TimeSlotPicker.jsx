@@ -8,7 +8,6 @@ export default function TimeSlotPicker({
 }) {
   const CustomChip = (props) => (
     <Chip
-      id="slotBtn"
       label={props.label}
       color="primary"
       variant="outlined"
@@ -58,7 +57,7 @@ export default function TimeSlotPicker({
           ))}
         </Stack>
       )}
-      {availableSlots.afternoon.length > 0 && (
+      {availableSlots.evening.length > 0 && (
         <Stack
           direction="row"
           alignItems="center"

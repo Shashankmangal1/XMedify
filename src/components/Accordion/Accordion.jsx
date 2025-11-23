@@ -6,9 +6,11 @@ import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 
-const Accordion = styled((props) => (
+const AccordionRoot = (props) => (
     <MuiAccordion disableGutters elevation={0} square {...props} />
-))(() => ({
+);
+
+const Accordion = styled(AccordionRoot)(() => ({
     '&::before': {
         display: 'none',
     },
@@ -17,12 +19,14 @@ const Accordion = styled((props) => (
     },
 }));
 
-const AccordionSummary = styled((props) => (
+const AccordionSummaryRoot = (props) => (
     <MuiAccordionSummary
         expandIcon={<AddIcon sx={{ color: 'primary.main' }} />}
         {...props}
     />
-))(() => ({
+);
+
+const AccordionSummary = styled(AccordionSummaryRoot)(() => ({
     backgroundColor: false,
     '& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
         transform: 'rotate(45deg)',

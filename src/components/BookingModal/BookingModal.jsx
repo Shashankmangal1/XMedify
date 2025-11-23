@@ -112,7 +112,6 @@ export default function BookingModal({
                 Confirm
               </Button>
               <Button
-                id="confirmBtn"
                 variant="outlined"
                 size="large"
                 disableElevation
